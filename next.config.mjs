@@ -5,10 +5,14 @@ const nextConfig = {
   },
   images: {
     unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'localhost',
+      },
+    ],
   },
-  experimental: {
-    esmExternals: true,
-  },
+  reactStrictMode: true,
 }
 
 export default nextConfig
